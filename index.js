@@ -40,7 +40,6 @@ app.get("/api/:date?", (req, res) => {
 })
 
 const handleEmptyDate = (res) => {
-  console.log("tru")
   let date = new Date();
   let ms = date.getTime();
   res.json({
